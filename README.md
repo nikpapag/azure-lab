@@ -183,7 +183,24 @@ Summary: Given the dynamic nature of our deployment we want to be able to switch
 ---
 
 ### Deploy Service to Stamps
-1. Use the following shell script:
+
+Summary: Up until now, we did everything to discover the instances we need to deploy to. 
+
+#### Steps
+
+1. Select Project Settings
+2. Select Templates
+3. Select Azure_Stamps and then Open in Template Studio
+4. Select the execution tab
+5. Click on +Add Step
+6. Create and Use Template
+7. Select **shell script**
+
+#### Step Details
+| Field             | Value          |
+|-------------------|----------------|
+| Name        | Deploy|
+
 
 ```bash
 echo "Resource group Name"
@@ -197,5 +214,15 @@ echo <+project.name>
 echo "Stamp"
 echo <+pipeline.stages.Deploy_Staging.spec.execution.steps.fetchInstances.deploymentInfoOutcome.serverInstanceInfoList[<+strategy.iteration>].properties.stamp>
 ```
+
+8. Select the **Advanced** tab
+9. Navigate to the Looping Stategy
+10. Select Matrix
+11. Define the strategy
+```bash
+matrix:
+ items: <+stage.output.hosts>
+```
+
 
 2. Save, validate output, and deploy.
