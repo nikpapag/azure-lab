@@ -21,10 +21,6 @@ Understand how Harness can address custom deployment types and adopt different p
 
    <img width="698" alt="Screenshot 2024-12-03 at 20 44 30" src="https://github.com/user-attachments/assets/2b5cd45c-9d8a-43b4-9902-10219ad6a51d">
 
-
-#### Identify Stamps
-Use the Fetch Instances functionality.
-
 ---
 
 ### Create a Template
@@ -37,9 +33,12 @@ Use the Fetch Instances functionality.
 
 
 #### Input Values
-- **Name**: Azure Stamps
-- **Version Label**: v1
-- **Save To**: Project
+| Variable Name      | Value                                      |
+|--------------------|--------------------------------------------|
+| name        | `Azure_Stamps`                          |
+| Version Label           | `v1`         |
+| Save To       | `Project`     |
+
 
 5. Configure variables in the Variables section by clicking **+New Variable**.
 
