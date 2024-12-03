@@ -131,7 +131,7 @@ Summary: Given the dynamic nature of our deployment we want to be able to switch
 | AZURE_TENANT_ID       | String | `<+variable.org.AZURE_TENANT_ID>` |
 | AZURE_SUBSCRIPTION_ID | String | `<+variable.org.AZURE_SUBSCRIPTION_ID>` |
 | AZURE_CLIENT_ID       | String | `<+variable.org.AZURE_CLIENT_ID>` |
-| AZURE_CLIENT_SECRET   | Secret | Select azure_secret            |
+| AZURE_CLIENT_SECRET   | Secret |  org.azure_secret            |
 | ENVIRONMENT_TYPE      | String | staging                        |
 
 ---
