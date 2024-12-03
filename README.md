@@ -86,7 +86,10 @@ az logout
 2. Click **+New Service**.
 
 #### Input Values
-- **Name**: s3
+| Field               | Value          |
+|---------------------|----------------|
+| Name                | s3  |
+
 
 3. Save the service.
 4. Use the **Azure Stamps Deployment Template** and save.
