@@ -166,8 +166,20 @@ Summary: Given the dynamic nature of our deployment we want to be able to switch
 | Stage Name        | Deploy Staging |
 | Deployment Type   | Azure_Stamps   |
 
-4. Configure the deployment steps, save, and run the pipeline.
+4. Set Up state following the setup guide
 
+| Field             | Value          |
+|-------------------|----------------|
+| Service   |`s3` |
+| Environment  | `azure_staging`   |
+| Infrastructure | `westeurope` |
+
+5. From the NavBar select **Advanced**
+6. Select the azure delegate
+
+<img width="512" alt="Screenshot 2024-12-03 at 21 19 49" src="https://github.com/user-attachments/assets/f3679d9a-8883-4f42-b79a-42a3a26a567b">
+
+7. Validate Ouput of the **Fetch Instances** step
 ---
 
 ### Deploy Service to Stamps
