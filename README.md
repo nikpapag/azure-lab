@@ -223,6 +223,18 @@ echo <+pipeline.stages.Deploy_Staging.spec.execution.steps.fetchInstances.deploy
 matrix:
  items: <+stage.output.hosts>
 ```
+12. Save the step
+
+#### Integrate the step to the pipeline
+1. Navigate to the previously created pipeline
+2. After Fetch Instances **+Deployment Template Steps**
+
+<img width="524" alt="Screenshot 2024-12-03 at 21 26 37" src="https://github.com/user-attachments/assets/dd4b5096-5034-4210-96f8-af596467f9a6">
 
 
-2. Save, validate output, and deploy.
+3. Select the Deploy step
+4. Save and Run the pipeline
+5. Validate Ouput matches the wanted result
+
+<img width="1395" alt="Screenshot 2024-12-03 at 20 45 14" src="https://github.com/user-attachments/assets/eaebc374-b171-4b84-8065-c38fa9dd43dd">
+
