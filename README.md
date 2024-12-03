@@ -19,6 +19,9 @@ Understand how Harness can address custom deployment types and adopt different p
 1. Resource groups are pre-provisioned as shown below.
 2. Two stamps are created with resource definitions and additional tagging for identification.
 
+   <img width="698" alt="Screenshot 2024-12-03 at 20 44 30" src="https://github.com/user-attachments/assets/2b5cd45c-9d8a-43b4-9902-10219ad6a51d">
+
+
 #### Identify Stamps
 Use the Fetch Instances functionality.
 
@@ -29,6 +32,9 @@ Use the Fetch Instances functionality.
 2. Select **Templates**.
 3. Click **+New Template**.
 4. From the dropdown, select **Deployment**.
+
+   <img width="278" alt="Screenshot 2024-12-03 at 21 02 15" src="https://github.com/user-attachments/assets/65a6f7d2-6d89-4e71-bdde-bdcb6fa4a45d">
+
 
 #### Input Values
 - **Name**: Azure Stamps
