@@ -116,6 +116,12 @@ az logout
 ---
 
 ### Service Overrides
+Summary: Given the dynamic nature of our deployment we want to be able to switch between tenants, clients and environments at runtime. Harness allows to define variable overrides 
+
+<img width="771" alt="Screenshot 2024-12-03 at 21 03 13" src="https://github.com/user-attachments/assets/73b62eb8-9609-4b4d-8b2f-b611750ad736">
+
+
+#### Steps
 1. Navigate to **Overrides**.
 2. Click **+New Override**.
 
