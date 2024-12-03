@@ -108,6 +108,7 @@ az logout
 
 3. Save the environment.
 4. Add Infrastructure Definitions.
+5. Click on **+New Infrastructure Definition**
 
 #### Input Values
 | Field             | Value          |
@@ -125,7 +126,16 @@ Summary: Given the dynamic nature of our deployment we want to be able to switch
 
 #### Steps
 1. Navigate to **Overrides**.
-2. Click **+New Override**.
+2. From the NavBar select **Infrastructure Specific Overrides**
+3. Click **+New Override**.
+4. Select the environment and infra for the ovverride
+
+| Variable Name         | Type   | Value                           |
+|-----------------------|--------|---------------------------------|
+| environment       | String | `azure_staging` |
+| infrastructure | String | `westeurope` |
+
+5. Configure the overrides as follows
 
 #### Override Details
 | Variable Name         | Type   | Value                           |
@@ -136,6 +146,7 @@ Summary: Given the dynamic nature of our deployment we want to be able to switch
 | AZURE_CLIENT_SECRET   | Secret |  org.azure_client_secret         |
 | ENVIRONMENT_TYPE      | String | staging                        |
 
+6. Save overrides using the checkbox
 ---
 
 ### Pipeline Creation
