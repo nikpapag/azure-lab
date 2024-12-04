@@ -220,7 +220,7 @@ Summary: Up until now, we did everything to discover the instances we need to de
 
 ```bash
 echo "Resource group Name"
-echo <+matrix.item>
+echo <+matrix.items>
 echo "Service Name"
 echo <+service.name>
 echo "Application Region"
