@@ -69,7 +69,7 @@ az login --service-principal \
 echo "DEBUG: AZ Account Set"
 az account set --subscription <+infra.variables.subscriptionId>
 echo "DEBUG: Identify stamps/resource groups that the service belongs to"
-SERVICE_TO_FIND=<+infra.variables.stampName>
+SERVICE_TO_FIND=<+infra.variables.serviceName>
 az group list --tag stamp=true --tag environment=<+infra.variables.environment> --tag project_name=<+infra.variables.projectName> \
   --query "{items: [?contains(tags.services, '${SERVICE_TO_FIND}')].{name: name, location: location, tags: tags}}" \
   --output json > $INSTANCE_OUTPUT_PATH
