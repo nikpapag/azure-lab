@@ -77,6 +77,22 @@ cat $INSTANCE_OUTPUT_PATH
 az logout
 ```
 
+
+### Instance Object Array Path
+| input        | `items`    
+|
+### Instance Attributes
+Generates the instance metada for each one of the JSON objects
+| Variable Name      | Value                                      |
+|--------------------|--------------------------------------------|
+| instancename        | `name`                          |
+| environment           | `tags.environment`         |
+| location       | `location`     |
+| stamp           | `tags.stamp_name`         |
+| services     | `tags.services`   |
+
+
+
 2. Save the deployment template.
 
 ---
