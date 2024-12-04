@@ -254,3 +254,42 @@ matrix:
 
 <img width="1395" alt="Screenshot 2024-12-03 at 20 45 14" src="https://github.com/user-attachments/assets/eaebc374-b171-4b84-8065-c38fa9dd43dd">
 
+
+
+### Bonus
+
+#### Steps
+1. Add a second dimention to the matrix looping strategy
+
+   **Example**
+   ```bash
+   for(String s: listA) {
+   	for(String s1: listB) {
+   	  stdout(s) // it would print the value of element being iterated on in listA
+   	  stdout(s1) // it would print the value of element being iterated on in listB
+   	}
+   }
+   ```
+2. Navigate to the **Deploy** template and modify
+   ```bash
+      matrix:
+       items: <+stage.output.hosts>
+       tenants: ["tenant1","tenant2"]
+   ```
+
+
+3. Amend the script to display the tenants, 
+```bash
+   echo "Resource group Name"
+   echo <+matrix.items>
+   echo "Tenant
+   echo <+matrix.tenants>
+   .
+   .
+   .
+```
+
+
+
+
+
