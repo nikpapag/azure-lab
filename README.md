@@ -279,15 +279,15 @@ matrix:
 
 
 3. Amend the script to display the tenants, 
-```bash
-   echo "Resource group Name"
-   echo <+matrix.items>
-   echo "Tenant
-   echo <+matrix.tenants>
-   .
-   .
-   .
-```
+   ```bash
+      echo "Resource group Name"
+      echo <+matrix.items>
+      echo "Tenant
+      echo <+matrix.tenants>
+      .
+      .
+      .
+   ```
 
 
 
